@@ -299,3 +299,40 @@ ul , ol {
     }
 
 }
+
+
+/*css footer*/
+.content-grid-footer {
+    display: grid;
+    gap: 5px;
+    background-color: #f2f2f2;
+    padding: 35px;
+}
+@media (min-width: 768px) {
+    .content-grid-footer {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width: 767px) {
+    .content-grid-footer {
+        grid-template-columns: 100%;
+    }
+}
+
+.content-grid-footer div ul {
+    padding: 0;
+    list-style: none;
+}
+.content-grid-footer div h3 {
+    font-size: 15px;
+    font-family: 'raleway-black';
+}
+.content-grid-footer div li a {
+    color: #5e5e5e;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+/*end css footer*/
